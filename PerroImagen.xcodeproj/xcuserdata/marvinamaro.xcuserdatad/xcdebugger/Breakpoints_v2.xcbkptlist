@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "439559FE-FBE5-4217-92DF-41080819386A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0ACE0BB-4688-4A77-A0C9-7852959E0CD6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PerroImagen/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83DAF814-A2ED-4201-85E3-235D4B73D306"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PerroImagen/ListaDePerrosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E23471B4-8BF2-4E80-B789-9BD7CFC658C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PerroImagen/ListaDePerrosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "getJSON(urlToRequest:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E23471B4-8BF2-4E80-B789-9BD7CFC658C7 - 39f1be7f1ef22b07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerroImagen.ListaDePerrosViewController.getJSON(urlToRequest: Swift.String) -&gt; ()"
+                  moduleName = "PerroImagen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marvinamaro/Documents/JobExams/PerroImagen/PerroImagen/ListaDePerrosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "E23471B4-8BF2-4E80-B789-9BD7CFC658C7 - 7cbaae4a161f3b3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PerroImagen.ListaDePerrosViewController.getJSON(urlToRequest: Swift.String) -&gt; ()"
+                  moduleName = "PerroImagen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marvinamaro/Documents/JobExams/PerroImagen/PerroImagen/ListaDePerrosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "226">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD44F1FE-A9CF-4594-96D6-96FE20D15163"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PerroImagen/ListaDePerrosViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "BD44F1FE-A9CF-4594-96D6-96FE20D15163 - da1f2ec8a5147a27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerroImagen.ListaDePerrosViewController.__deallocating_deinit"
+                  moduleName = "PerroImagen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marvinamaro/Documents/JobExams/PerroImagen/PerroImagen/ListaDePerrosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "BD44F1FE-A9CF-4594-96D6-96FE20D15163 - f3ea30404cd76f29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerroImagen.ListaDePerrosViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PerroImagen.ListaDePerrosViewController"
+                  moduleName = "PerroImagen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marvinamaro/Documents/JobExams/PerroImagen/PerroImagen/ListaDePerrosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "BD44F1FE-A9CF-4594-96D6-96FE20D15163 - a3f667a2b19022bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerroImagen.ListaDePerrosViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PerroImagen.ListaDePerrosViewController"
+                  moduleName = "PerroImagen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marvinamaro/Documents/JobExams/PerroImagen/PerroImagen/ListaDePerrosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "191">
+               </Location>
+               <Location
+                  uuid = "BD44F1FE-A9CF-4594-96D6-96FE20D15163 - c1805da9e477d2a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerroImagen.ListaDePerrosViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PerroImagen.ListaDePerrosViewController&gt;"
+                  moduleName = "PerroImagen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marvinamaro/Documents/JobExams/PerroImagen/PerroImagen/ListaDePerrosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "BD44F1FE-A9CF-4594-96D6-96FE20D15163 - 6f44dac35709b132"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerroImagen.ListaDePerrosViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PerroImagen.ListaDePerrosViewController&gt;"
+                  moduleName = "PerroImagen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marvinamaro/Documents/JobExams/PerroImagen/PerroImagen/ListaDePerrosViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "126">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
