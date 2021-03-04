@@ -25,7 +25,24 @@ class SubRazasViewController: UITableViewController {
         print(subRazasArray)
     }
  
- 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let subrazaseleccionado: String = subRazasArray[indexPath.row]
+        let viewControllers = self.navigationController?.viewControllers
+        let count: Int = viewControllers!.count
+        if count > 1 {
+            let minus2count = count - 2
+            if let previousController = viewControllers?[minus2count] as? DetallesViewController {
+                print("x")
+            }
+        }
+        
+        print("Num: \(indexPath.row)")
+        print("Value: \(subRazasArray[indexPath.row])")
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+
     override func tableView(_ tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
         return subRazasArray.count
     }

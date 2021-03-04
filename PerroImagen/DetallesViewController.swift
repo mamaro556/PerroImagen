@@ -10,10 +10,15 @@ import UIKit
 class DetallesViewController: UIViewController
 {
     var raza: String = ""
+    let imageView = UIImageView()
+    var subraza: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         view.backgroundColor = .white
+        
         let temperamentoLabel = UILabel()
         let alturaLabel = UILabel()
         let anchoLabel = UILabel()
@@ -38,7 +43,9 @@ class DetallesViewController: UIViewController
         anchoTexto.translatesAutoresizingMaskIntoConstraints = false
         largoVidaTexto.translatesAutoresizingMaskIntoConstraints = false
         grupoTexto.translatesAutoresizingMaskIntoConstraints = false
-
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
         temperamentoLabel.textColor = .black
         temperamentoLabel.text = "Temperament:"
         temperamentoLabel.font = UIFont(name: "Helvetica", size: 18)
@@ -102,6 +109,7 @@ class DetallesViewController: UIViewController
 
         verSubRazas.addTarget(self, action: #selector(self.buttonTapped), for: .touchUpInside)
         view.addSubview(verSubRazas)
+        view.addSubview(imageView)
 /*
          Temperament: Affectionate, Loyal, Noble.
          Height: 9.75-15.75 inches (small) 15.75-19.75 inches (medium) 19.75-25.75 inches (large)
@@ -117,7 +125,12 @@ class DetallesViewController: UIViewController
             razaTexto.topAnchor.constraint(equalTo: view.topAnchor, constant:250),
 
             razaTexto.centerXAnchor.constraint(equalTo:self.view.centerXAnchor),
-           
+            
+            //image
+            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant:300),
+
+            imageView.centerXAnchor.constraint(equalTo:self.view.centerXAnchor),
+
             
             // labels
             temperamentoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-300),
@@ -153,6 +166,64 @@ class DetallesViewController: UIViewController
 
         ])
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if !isMovingToParent { print("backwards")
+            
+            
+            // get imageurl
+            getJSON(urlToRequest: "https://dog.ceo/api/breed/hound/afghan/images/random")
+            
+            // get image
+            let imageUrlString: String
+            imageUrlString = ""
+            
+            /* No esta listo
+            let url = URL(string: imageUrlString)!
+
+            
+            let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, _, _) in
+                if let data = data {
+                    DispatchQueue.main.async {
+                        // Create Image and Update Image View
+                        self?.imageView.image = UIImage(data: data)
+                    }
+                }
+            }
+
+            
+            dataTask.resume()
+            */
+        }
+        
+    }
+    
+    func getJSON(urlToRequest: String) {
+        URLSession.shared.dataTask(with: URL(string: urlToRequest)!)  { (data, response, error) in
+            do {
+                guard let data = data else {
+                   return
+                }
+                guard let json = try
+                JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]
+                else {
+                    print("error")
+                    return
+                }
+                /*
+                var jsonMain: [String] = json["message"] as! [String] {
+                print(jsonMain)
+                
+                }
+                */
+            }
+            catch {
+               NSLog("ERROR \(error.localizedDescription)")
+            }
+                    
+        }.resume()
     }
     
     @objc func buttonTapped(sender : UIButton) {
