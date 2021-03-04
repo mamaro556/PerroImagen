@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import Foundation
 
 class ListaDePerrosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     private var listaDePerrosArray = [String]()
-    //= ["Value1","Value2","Value3"]
+    private var listaDeSubRazasArray = [String]()
     private var listaDePerrosTableView: UITableView!
 
     
@@ -41,8 +42,12 @@ class ListaDePerrosViewController: UIViewController, UITableViewDelegate, UITabl
          }
     
          func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let newViewController =
+            let newViewController = DetallesViewController()
+
+            let razaseleccionado: String = listaDePerrosArray[indexPath.row]
+            newViewController.raza = razaseleccionado
             self.navigationController?.pushViewController(newViewController, animated: true)
+            
              print("Num: \(indexPath.row)")
              print("Value: \(listaDePerrosArray[indexPath.row])")
          }
@@ -80,6 +85,11 @@ class ListaDePerrosViewController: UIViewController, UITableViewDelegate, UITabl
                     }
                     self.listaDePerrosArray.sort()
                     
+                    // Access Shared Defaults Object
+                    let userDefaults = UserDefaults.standard
+
+                    // Guarda Todo perros
+                    userDefaults.set(jsonMain, forKey: "PerrosRazasYSub")
                     DispatchQueue.main.async {
                         self.listaDePerrosTableView.reloadData()
                     }

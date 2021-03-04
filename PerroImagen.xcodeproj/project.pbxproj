@@ -14,7 +14,8 @@
 		222E8FC425EF39570013F6A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222E8FC325EF39570013F6A6 /* Assets.xcassets */; };
 		222E8FD225EF39580013F6A6 /* PerroImagenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E8FD125EF39580013F6A6 /* PerroImagenTests.swift */; };
 		222E8FDD25EF39580013F6A6 /* PerroImagenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E8FDC25EF39580013F6A6 /* PerroImagenUITests.swift */; };
-		22427A4C25F08B0A0001C27B /* DetallasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22427A4B25F08B0A0001C27B /* DetallasViewController.swift */; };
+		22427A4C25F08B0A0001C27B /* SubRazasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22427A4B25F08B0A0001C27B /* SubRazasViewController.swift */; };
+		22427A6C25F0C7F00001C27B /* DetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22427A6B25F0C7F00001C27B /* DetallesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		222E8FD825EF39580013F6A6 /* PerroImagenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerroImagenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		222E8FDC25EF39580013F6A6 /* PerroImagenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerroImagenUITests.swift; sourceTree = "<group>"; };
 		222E8FDE25EF39580013F6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22427A4B25F08B0A0001C27B /* DetallasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallasViewController.swift; sourceTree = "<group>"; };
+		22427A4B25F08B0A0001C27B /* SubRazasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubRazasViewController.swift; sourceTree = "<group>"; };
+		22427A6B25F0C7F00001C27B /* DetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,14 @@
 		222E8FB625EF39520013F6A6 /* PerroImagen */ = {
 			isa = PBXGroup;
 			children = (
-				22427A4B25F08B0A0001C27B /* DetallasViewController.swift */,
+				22427A4B25F08B0A0001C27B /* SubRazasViewController.swift */,
 				222E8FB725EF39520013F6A6 /* AppDelegate.swift */,
 				222E8FB925EF39520013F6A6 /* SceneDelegate.swift */,
 				222E8FBB25EF39520013F6A6 /* ListaDePerrosViewController.swift */,
 				222E8FC325EF39570013F6A6 /* Assets.xcassets */,
 				222E8FC825EF39570013F6A6 /* Info.plist */,
 				222E8FC025EF39520013F6A6 /* PerroImagen.xcdatamodeld */,
+				22427A6B25F0C7F00001C27B /* DetallesViewController.swift */,
 			);
 			path = PerroImagen;
 			sourceTree = "<group>";
@@ -256,11 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22427A6C25F0C7F00001C27B /* DetallesViewController.swift in Sources */,
 				222E8FBC25EF39520013F6A6 /* ListaDePerrosViewController.swift in Sources */,
 				222E8FC225EF39520013F6A6 /* PerroImagen.xcdatamodeld in Sources */,
 				222E8FB825EF39520013F6A6 /* AppDelegate.swift in Sources */,
 				222E8FBA25EF39520013F6A6 /* SceneDelegate.swift in Sources */,
-				22427A4C25F08B0A0001C27B /* DetallasViewController.swift in Sources */,
+				22427A4C25F08B0A0001C27B /* SubRazasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
