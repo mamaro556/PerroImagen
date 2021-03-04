@@ -157,6 +157,11 @@ class DetallesViewController: UIViewController
     
     @objc func buttonTapped(sender : UIButton) {
         print("Pressed")
+        let newViewController = SubRazasViewController()
+
+        newViewController.razaseleccionado = raza
+        self.navigationController?.pushViewController(newViewController, animated: true)
+
     }
     
 

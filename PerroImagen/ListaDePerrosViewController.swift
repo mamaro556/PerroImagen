@@ -39,11 +39,11 @@ class ListaDePerrosViewController: UIViewController, UITableViewDelegate, UITabl
          listaDePerrosTableView.backgroundColor = .white
 
          }
-     
+     /*
          func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
          
          }
-    
+    */
          func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let newViewController = DetallesViewController()
 

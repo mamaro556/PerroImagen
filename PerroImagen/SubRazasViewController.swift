@@ -9,18 +9,20 @@ import UIKit
 
 class SubRazasViewController: UITableViewController {
     var razaseleccionado: String = ""
-    let subRazasArray = [String]()
+    var subRazasArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+
         // Access Shared Defaults Object
         let userDefaults = UserDefaults.standard
-        razaseleccionado = userDefaults.object(forKey: "razaseleccionado") as? String ?? ""
-        let DictionaryRazasYSub = userDefaults.object(forKey: "PerrosRazasYSub") as? [String:[String]]
-/*
-        let subRazas:[String] = DictionaryRazasYSub[razaseleccionado]
+        //razaseleccionado = userDefaults.object(forKey: "razaseleccionado") as? String ?? ""
+        let DictionaryRazasYSub = userDefaults.object(forKey: "PerrosRazasYSub") as! [String:[String]]
+
+        let subRazas  = DictionaryRazasYSub[razaseleccionado] as! [String]
         subRazasArray = subRazas
-*/        print(subRazasArray)
+        print(subRazasArray)
     }
  
  
@@ -28,14 +30,14 @@ class SubRazasViewController: UITableViewController {
         return subRazasArray.count
     }
 
-    func numberOfSectionsInTableView(_ tableView: UITableView?) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
         cell.textLabel!.text = "\(subRazasArray[indexPath.row])"
          
         return cell
