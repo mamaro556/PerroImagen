@@ -17,8 +17,10 @@ class ListaDePerrosViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Perros"
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
+        //listaDePerrosTableView.backgroundColor = .white
         
         //get json
         let urlPath: String = "https://dog.ceo/api/breeds/list/all"
@@ -34,7 +36,8 @@ class ListaDePerrosViewController: UIViewController, UITableViewDelegate, UITabl
          listaDePerrosTableView.dataSource = self
          listaDePerrosTableView.delegate = self
          self.view.addSubview(listaDePerrosTableView)
-      
+         listaDePerrosTableView.backgroundColor = .white
+
          }
      
          func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
