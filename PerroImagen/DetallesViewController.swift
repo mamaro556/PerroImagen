@@ -41,23 +41,23 @@ class DetallesViewController: UIViewController
 
         temperamentoLabel.textColor = .black
         temperamentoLabel.text = "Temperament"
-        temperamentoLabel.font = UIFont(name: "Helvetica", size: 12)
+        temperamentoLabel.font = UIFont(name: "Helvetica", size: 20)
         view.addSubview(temperamentoLabel)
         alturaLabel.textColor = .black
         alturaLabel.text = "Height"
-        alturaLabel.font = UIFont(name: "Helvetica", size: 12)
+        alturaLabel.font = UIFont(name: "Helvetica", size: 20)
         view.addSubview(alturaLabel)
         anchoLabel.textColor = .black
         anchoLabel.text = "Width"
-        anchoLabel.font = UIFont(name: "Helvetica", size: 12)
+        anchoLabel.font = UIFont(name: "Helvetica", size: 20)
         view.addSubview(anchoLabel)
         largoVidaLabel.textColor = .black
         largoVidaLabel.text = "Life Expectancy"
-        largoVidaLabel.font = UIFont(name: "Helvetica", size: 12)
+        largoVidaLabel.font = UIFont(name: "Helvetica", size: 20)
         view.addSubview(largoVidaLabel)
         grupoLabel.textColor = .black
         grupoLabel.text = "Group"
-        grupoLabel.font = UIFont(name: "Helvetica", size: 12)
+        grupoLabel.font = UIFont(name: "Helvetica", size: 20)
         view.addSubview(grupoLabel)
 
         razaTexto.textColor = .black
@@ -120,19 +120,19 @@ class DetallesViewController: UIViewController
            
             
             // labels
-            temperamentoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-200),
+            temperamentoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-300),
             temperamentoLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:20),
             temperamentoLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:-20),
-            alturaLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-190),
+            alturaLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-275),
             alturaLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:20),
             alturaLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:-20),
-            anchoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-180),
+            anchoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-250),
             anchoLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:20),
             anchoLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:-20),
-            largoVidaLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-170),
+            largoVidaLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-225),
             largoVidaLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:20),
             largoVidaLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:-20),
-            grupoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-160),
+            grupoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-200),
             grupoLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:20),
             grupoLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:-20),
 
