@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SubRazasViewController: ListaViewController,  UITableViewDelegate, UITableViewDataSource {
+class SubRazasViewController: ListaViewController {
     var razaseleccionado: String = ""
     var subRazasArray = [String]()
     private var listaDeSubRazasTableView: UITableView!
@@ -38,6 +38,20 @@ class SubRazasViewController: ListaViewController,  UITableViewDelegate, UITable
         let subRazas  = DictionaryRazasYSub[razaseleccionado] as! [String]
         return subRazas
     }
+    
+
+ //   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+
+        /*        let cell = listaDePerrosTableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath)
+        cell.textLabel!.text = "\(listaDePerrosArray[indexPath.row])"
+        
+        cell = UITableViewCell()
+    return cell
+     */
+ }
+
+extension SubRazasViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
@@ -74,16 +88,5 @@ class SubRazasViewController: ListaViewController,  UITableViewDelegate, UITable
         return cell
  
     }
- //   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-
-        /*        let cell = listaDePerrosTableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath)
-        cell.textLabel!.text = "\(listaDePerrosArray[indexPath.row])"
-        
-        cell = UITableViewCell()
-    return cell
-     */
- }
-
-    
+}
 

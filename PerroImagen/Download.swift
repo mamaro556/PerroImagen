@@ -12,13 +12,11 @@ class Download {
     var lista: String = ""
     var urlToRequest:String = ""
     
-    func getJSON(viewController: ListaViewController, tableView: UITableView) {
+    func getJSON(viewController: ListaViewController, tipoDeLista: TipoDeLista, tableView: UITableView) {
         
-        lista = "listaDePerros"
-        if lista == "listaDePerros"
-        {
-            urlToRequest = getAPIConnectionString()
-        }
+         
+        urlToRequest = getAPIConnectionString(tipoDeLista: tipoDeLista)
+
         
         URLSession.shared.dataTask(with: URL(string: urlToRequest)!)  { (data, response, error) in
             do {
@@ -60,12 +58,25 @@ class Download {
         }.resume()
     }
     
-    private func getAPIConnectionString() -> String {
+    private func getAPIConnectionString(tipoDeLista: TipoDeLista) -> String {
+    
+        let connectionStringKey: String
+        switch tipoDeLista {
+        case .listadeperros:
+            connectionStringKey = "ListaTodos"
+        default:
+            connectionStringKey = "ListaTodos"
+        }
+
         let path: String = Bundle.main.path(forResource: "Settings", ofType: "plist")!
         let apiConnectionStringDictionary: NSDictionary = NSDictionary(contentsOfFile: path)!
-        let connectionString = apiConnectionStringDictionary.object(forKey: "DogsAPIConnectionString") as! String
+        let connectionString = apiConnectionStringDictionary.object(forKey: connectionStringKey) as! String
         print (connectionString)
         return connectionString
     }
 
+}
+
+enum TipoDeLista {
+    case listadeperros
 }

@@ -14,7 +14,7 @@ class ListaDePerrosViewController: ListaViewController {
     //var listaDePerrosArray = [String]()
     private var listaDeSubRazasArray = [String]()
     private var listaDePerrosTableView: UITableView!
-
+    private let tipoDeLista = TipoDeLista.listadeperros
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class ListaDePerrosViewController: ListaViewController {
         SetupUI()
         //Download get perros lista
         let download:Download = Download()
-        download.getJSON(viewController: self, tableView: self.listaDePerrosTableView)
+        download.getJSON(viewController: self, tipoDeLista:tipoDeLista, tableView: self.listaDePerrosTableView)
         
         //listaDePerrosArray = listaDeStrings
         listaDePerrosTableView.backgroundColor = .white

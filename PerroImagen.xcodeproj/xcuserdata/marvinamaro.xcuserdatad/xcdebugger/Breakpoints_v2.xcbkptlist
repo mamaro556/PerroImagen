@@ -187,9 +187,9 @@
             filePath = "PerroImagen/Download.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "getJSON(viewController:tableView:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getJSON(viewController:tipoDeLista:tableView:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -203,9 +203,9 @@
             filePath = "PerroImagen/Download.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "getJSON(viewController:tableView:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getJSON(viewController:tipoDeLista:tableView:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -267,9 +267,9 @@
             filePath = "PerroImagen/Download.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "getJSON(viewController:tableView:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getJSON(viewController:tipoDeLista:tableView:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -283,9 +283,9 @@
             filePath = "PerroImagen/Download.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "getJSON(viewController:tableView:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getJSON(viewController:tipoDeLista:tableView:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -302,6 +302,22 @@
             startingLineNumber = "28"
             endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "056E28F3-6163-42EA-8D03-5C0C27D07DDC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PerroImagen/Download.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getJSON(viewController:tipoDeLista:tableView:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
