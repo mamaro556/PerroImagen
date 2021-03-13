@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class ListaDePerrosViewController: ListaViewController,  UITableViewDelegate, UITableViewDataSource {
+class ListaDePerrosViewController: ListaViewController {
 
     
     //var listaDePerrosArray = [String]()
@@ -19,10 +19,23 @@ class ListaDePerrosViewController: ListaViewController,  UITableViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Perros"
+        
+        SetupUI()
+        //Download get perros lista
+        let download:Download = Download()
+        download.getJSON(viewController: self, tableView: self.listaDePerrosTableView)
+        
+        //listaDePerrosArray = listaDeStrings
+        listaDePerrosTableView.backgroundColor = .white
+
+    }
+
+    func SetupUI()
+    {
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
         
-    
+        
         let barHeight: CGFloat = view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
          let displayWidth: CGFloat = self.view.frame.width
          let displayHeight: CGFloat = self.view.frame.height
@@ -33,15 +46,10 @@ class ListaDePerrosViewController: ListaViewController,  UITableViewDelegate, UI
          listaDePerrosTableView.delegate = self
          self.view.addSubview(listaDePerrosTableView)
 
-        //Download get perros lista
-        let download:Download = Download()
-        download.getJSON(viewController: self, tableView: self.listaDePerrosTableView)
-        
-        //listaDePerrosArray = listaDeStrings
-        listaDePerrosTableView.backgroundColor = .white
-
     }
-    
+}
+
+extension ListaDePerrosViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let newViewController = DetallesViewController()
 
@@ -62,6 +70,4 @@ class ListaDePerrosViewController: ListaViewController,  UITableViewDelegate, UI
          cell.textLabel!.text = "\(listaDeStrings[indexPath.row])"
          return cell
      }
-
-
 }
