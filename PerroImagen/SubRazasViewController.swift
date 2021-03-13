@@ -7,25 +7,39 @@
 
 import UIKit
 
-class SubRazasViewController: UITableViewController {
+class SubRazasViewController: ListaViewController,  UITableViewDelegate, UITableViewDataSource {
     var razaseleccionado: String = ""
     var subRazasArray = [String]()
-    
+    private var listaDeSubRazasTableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+        //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+        let barHeight: CGFloat = view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+         let displayWidth: CGFloat = self.view.frame.width
+         let displayHeight: CGFloat = self.view.frame.height
 
-        // Access Shared Defaults Object
-        let userDefaults = UserDefaults.standard
-        //razaseleccionado = userDefaults.object(forKey: "razaseleccionado") as? String ?? ""
-        let DictionaryRazasYSub = userDefaults.object(forKey: "PerrosRazasYSub") as! [String:[String]]
+        listaDeSubRazasTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
+        listaDeSubRazasTableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+        listaDeSubRazasTableView.dataSource = self
+        listaDeSubRazasTableView.delegate = self
+         self.view.addSubview(listaDeSubRazasTableView)
 
-        let subRazas  = DictionaryRazasYSub[razaseleccionado] as! [String]
+        let subRazas = getSubRazas()
         subRazasArray = subRazas
         print(subRazasArray)
     }
  
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func getSubRazas() -> [String]{
+        // Access Shared Defaults Object
+        let userDefaults = UserDefaults.standard
+        let DictionaryRazasYSub = userDefaults.object(forKey: "PerrosRazasYSub") as! [String:[String]]
+
+        let subRazas  = DictionaryRazasYSub[razaseleccionado] as! [String]
+        return subRazas
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         let subrazaseleccionado: String = subRazasArray[indexPath.row]
         let viewControllers = self.navigationController?.viewControllers
@@ -43,15 +57,15 @@ class SubRazasViewController: UITableViewController {
         self.navigationController?.popViewController(animated: true)
     }
 
-    override func tableView(_ tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
         return subRazasArray.count
     }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)

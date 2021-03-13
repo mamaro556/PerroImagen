@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22264C6A25FC104A00F0DA9E /* Localizable.Strings in Resources */ = {isa = PBXBuildFile; fileRef = 22264C6925FC104900F0DA9E /* Localizable.Strings */; };
+		22264C6F25FC151400F0DA9E /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22264C6E25FC151300F0DA9E /* Settings.plist */; };
+		22264C7425FC36DF00F0DA9E /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22264C7325FC36DF00F0DA9E /* Download.swift */; };
+		22264C7C25FC512600F0DA9E /* ListaViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22264C7B25FC512500F0DA9E /* ListaViewControllers.swift */; };
 		222E8FB825EF39520013F6A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E8FB725EF39520013F6A6 /* AppDelegate.swift */; };
 		222E8FBA25EF39520013F6A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E8FB925EF39520013F6A6 /* SceneDelegate.swift */; };
 		222E8FBC25EF39520013F6A6 /* ListaDePerrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E8FBB25EF39520013F6A6 /* ListaDePerrosViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22264C6925FC104900F0DA9E /* Localizable.Strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.Strings; sourceTree = "<group>"; };
+		22264C6E25FC151300F0DA9E /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		22264C7325FC36DF00F0DA9E /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		22264C7B25FC512500F0DA9E /* ListaViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaViewControllers.swift; sourceTree = "<group>"; };
 		222E8FB425EF39520013F6A6 /* PerroImagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerroImagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222E8FB725EF39520013F6A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222E8FB925EF39520013F6A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +86,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22264C6725FC0FC800F0DA9E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		22264C6825FC0FFD00F0DA9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22264C6925FC104900F0DA9E /* Localizable.Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		222E8FAB25EF39520013F6A6 = {
 			isa = PBXGroup;
 			children = (
+				22264C6825FC0FFD00F0DA9E /* Resources */,
+				22264C6725FC0FC800F0DA9E /* Utilities */,
 				222E8FB625EF39520013F6A6 /* PerroImagen */,
 				222E8FD025EF39580013F6A6 /* PerroImagenTests */,
 				222E8FDB25EF39580013F6A6 /* PerroImagenUITests */,
@@ -109,6 +134,9 @@
 				222E8FC825EF39570013F6A6 /* Info.plist */,
 				222E8FC025EF39520013F6A6 /* PerroImagen.xcdatamodeld */,
 				22427A6B25F0C7F00001C27B /* DetallesViewController.swift */,
+				22264C6E25FC151300F0DA9E /* Settings.plist */,
+				22264C7325FC36DF00F0DA9E /* Download.swift */,
+				22264C7B25FC512500F0DA9E /* ListaViewControllers.swift */,
 			);
 			path = PerroImagen;
 			sourceTree = "<group>";
@@ -235,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				222E8FC425EF39570013F6A6 /* Assets.xcassets in Resources */,
+				22264C6A25FC104A00F0DA9E /* Localizable.Strings in Resources */,
+				22264C6F25FC151400F0DA9E /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +293,9 @@
 				222E8FBC25EF39520013F6A6 /* ListaDePerrosViewController.swift in Sources */,
 				222E8FC225EF39520013F6A6 /* PerroImagen.xcdatamodeld in Sources */,
 				222E8FB825EF39520013F6A6 /* AppDelegate.swift in Sources */,
+				22264C7C25FC512600F0DA9E /* ListaViewControllers.swift in Sources */,
 				222E8FBA25EF39520013F6A6 /* SceneDelegate.swift in Sources */,
+				22264C7425FC36DF00F0DA9E /* Download.swift in Sources */,
 				22427A4C25F08B0A0001C27B /* SubRazasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

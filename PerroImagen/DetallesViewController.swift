@@ -16,7 +16,11 @@ class DetallesViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
         
+    }
+    
+    func setupUI() {
         view.backgroundColor = .white
         
         let temperamentoLabel = UILabel()
@@ -118,7 +122,7 @@ class DetallesViewController: UIViewController
          Group: Miscellaneous Class.
          */
         
-        
+        // Constraints
         NSLayoutConstraint.activate([
             
             //raza texto
@@ -165,7 +169,7 @@ class DetallesViewController: UIViewController
             grupoTexto.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant:-200)
 
         ])
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
